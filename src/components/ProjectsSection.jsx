@@ -5,7 +5,7 @@ const projects = [
     id: 1,
     title: "Lomo Toilet",
     description: "Aplicación web hecha para manejar el uso de los baños de los institutos y crear estadísticas.",
-    image: "/public/projects/lomoToilet.png",
+    image: "/projects/lomoToilet.png",
     Tags: ["React", "Ionic", "Bootstrap", "Spring Boot", "PostgreSQL"],
     githubUrl: "https://github.com/caarlosdiiaz/Proyecto_Final_Dam"
   },
@@ -13,7 +13,7 @@ const projects = [
     id: 2,
     title: "Videojuego en React",
     description: "Videojuego interactivo con selección de personajes, donde cada uno tiene características únicas.",
-    image: "/public/projects/videogame.jpg",
+    image: "/projects/videogame.jpg",
     Tags: ["React", "CSS", "JavaScript"],
     demoUrl: "https://videojuego-peleas-react.pages.dev/",
     githubUrl: "https://github.com/caarlosdiiaz/Proyecto_Final_Dam"
@@ -33,8 +33,8 @@ export const ProjectsSection = () => {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, key) => (
-            <div key={key} className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover">
+          {projects.map((project) => (
+            <div key={project.id} className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover">
               <div className="h-48 overflow-hidden">
                 <img
                   src={project.image}
@@ -45,8 +45,8 @@ export const ProjectsSection = () => {
 
               <div className="p-6">
                 <div className="flex flex-wrap gap-2 mb-4">
-                  {project.Tags.map((tag) => (
-                    <span className="px-2 py-1 text-xs font-medium border rounded-full bg-primary/20 text-secondary-foreground">{tag}</span>
+                  {project.Tags.map((tag, index) => (
+                    <span key={index} className="px-2 py-1 text-xs font-medium border rounded-full bg-primary/20 text-secondary-foreground">{tag}</span>
                   ))}
                 </div>
               </div>
@@ -58,6 +58,7 @@ export const ProjectsSection = () => {
                   <a
                     href={project.githubUrl}
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="text-foreground/80 hover:text-primary transition-colors duration-300"
                   >
                     <Github size={20}/>
@@ -66,6 +67,7 @@ export const ProjectsSection = () => {
                     <a
                       href={project.demoUrl}
                       target="_blank"
+                      rel="noopener noreferrer"
                       className="text-foreground/80 hover:text-primary transition-colors duration-300"
                     >
                       <ExternalLink size={20}/>

@@ -2,11 +2,11 @@ import { AboutSection } from "../components/AboutSection"
 import { ContactSection } from "../components/ContactSection"
 import { FooterComponent } from "../components/FooterComponent"
 import { HeroSection } from "../components/HeroSection"
-import { Navbar } from "../components/navbar"
 import { ProjectsSection } from "../components/ProjectsSection"
 import { SkillsSection } from "../components/SkillsSection"
 import { ThemeToggle } from "../components/ThemeToggle"
 import { StarBackground } from "@/components/StarBackground"
+import { Navbar } from "@/components/Navbar"
 
 function Home() {
   return (
