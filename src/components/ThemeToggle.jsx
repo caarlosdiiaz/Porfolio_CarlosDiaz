@@ -2,7 +2,7 @@ import { Moon, Sun } from 'lucide-react';
 import React, { useEffect } from 'react'
 import { cn } from '../lib/utils';
 
-export const ThemeToggle = () => {
+export const ThemeToggle = ({ isInline = false, className = "" }) => {
   // Estado para manejar el tema actual
   const [isDarkMode, setIsDarkMode] = React.useState(false);
 
@@ -33,11 +33,16 @@ export const ThemeToggle = () => {
   }
 
   // Renderizar el botón con el icono correspondiente
+  const buttonClasses = isInline 
+    ? cn("p-2 rounded-full transition-colors duration-300 focus:outline-none cursor-pointer", className)
+    : cn("fixed hidden md:block top-5 right-5 rounded-full p-2 transition-colors duration-300 z-50 focus:outline-none cursor-pointer", className);
+
   return (
     <button
       onClick={toggleTheme}
-      className={cn("fixed max-sm:hidden top-5 right-5 rounded-full p-2 rounded-full transition-colors durantion-33 z-50",
-        "focus:outline-hidden cursor-pointer")}>
+      className={buttonClasses}
+      aria-label={isDarkMode ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro'}
+    >
       {isDarkMode ?
         <Sun className='h-6 w-6 text-yellow-300'/>
         :

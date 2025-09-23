@@ -1,6 +1,7 @@
 import { cn } from '@/lib/utils';
 import { Menu, X } from 'lucide-react';
 import { useEffect, useState } from 'react';
+import { ThemeToggle } from './ThemeToggle';
 
 const navItems = [
   {name: 'Inicio', href: '#hero'},
@@ -48,14 +49,17 @@ export const Navbar = () => {
           ))}
         </div>
 
-        {/* Navegación en móvil */}
+        {/* Controles móviles: Theme Toggle + Menu Button */}
+        <div className="flex items-center gap-2 md:hidden">
+          <ThemeToggle isInline={true} className="text-foreground z-50" />
           <button
             onClick={() => setIsMenuOpen((prev) => !prev)}
-            className='md:hidden p-2 text-foreground z-50'
+            className='p-2 text-foreground z-50'
             aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
           >
             {isMenuOpen ? <X /> : <Menu />}
           </button>
+        </div>
 
         <div className={cn("fixed inset-0 bg-background/95 backdrop-blur-md z-40 flex flex-col items-center justify-center",
           "transition-all duration-300 md:hidden",

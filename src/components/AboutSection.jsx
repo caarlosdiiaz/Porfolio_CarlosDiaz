@@ -46,7 +46,7 @@ export const AboutSection = () => {
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">Desarrollo Backend</h4>
                   <p className="text-muted-foreground">
-                    Desarrollo de APIs Restful y servicios escalables probando diferentes tecnologías, buscando la adecuada para cada proyecto.
+                    Desarrollo de APIs Restful y servicios escalables probando diferentes tecnologías, para así encontrar las más adecuadas para cada proyecto.
                   </p>
                 </div>
               </div>
