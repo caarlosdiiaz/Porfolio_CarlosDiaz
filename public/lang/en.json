@@ -13,16 +13,16 @@
     "greeting": "Hi, I'm",
     "name": "Carlos",
     "surname": "Díaz",
-    "description": "I'm a full-stack developer who has focused his career on always writing clean code and using SOLID principles. I love learning and constantly improving my skills, and I enjoy working on challenging projects that allow me to grow professionally.",
+    "description": "Full-stack developer with a preference for front-end. Now working at Bitbox creating and maintaining applications with Next.js and Spring Boot.",
     "cta": "See my projects",
     "scroll": "Scroll"
   },
   "about": {
     "about": "About",
     "me": "Me",
-    "title": "Passionate developer focused on quality",
-    "p1": "With experience in personal projects, like the ones you can see in my portfolio. I specialize in creating modern and efficient web applications. I also love learning new technologies and constantly improving my skills.",
-    "p2": "I'm always looking for new opportunities to learn and collaborate with others.",
+    "title": "Full-stack developer at Bitbox",
+    "p1": "I'm a full-stack developer at Bitbox. I build and maintain after-sales applications with Next.js and Spring Boot.",
+    "p2": "I studied a higher vocational degree in Cross-Platform Application Development (DAM) and I haven't stopped since: I'm now doing a specialization in Artificial Intelligence and Big Data.",
     "cta": "Contact me",
     "cv": "Download CV",
     "backend": {
@@ -53,16 +53,23 @@
     "title": "My",
     "titleHighlight": "Projects",
     "subtitle": "Here I present my most recent projects. Each of them reflects my skills and knowledge about web development.",
-    "cta": "Visit my github"
+    "cta": "Visit my github",
+    "items": {
+      "1": { "description": "Web application to manage the use of school bathrooms and create statistics." },
+      "2": { "description": "Interactive video game with character selection, where each has unique characteristics." }
+    }
   },
   "contact": {
     "title": "Contact",
-    "subtitle": "I'll be happy to receive messages about how to focus my career, things to improve, project ideas...",
+    "subtitle": "I'm open to talking about projects, collaborations and opportunities. Write to me.",
     "info": "Contact details",
     "email": "Email",
     "location": "Location",
     "locationValue": "Las Palmas de Gran Canaria, ES",
     "connect": "Connect with me"
   },
-  "inMainStack": "In main stack"
+  "inMainStack": "In main stack",
+  "footer": {
+    "rights": "All rights reserved."
+  }
 }

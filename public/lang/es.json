@@ -13,16 +13,16 @@
     "greeting": "Hola, soy",
     "name": "Carlos",
     "surname": "Díaz",
-    "description": "Soy un desarrollador full-stack que ha enfocado su carrera en siempre crear código limpio y en utilizar los principios SOLID. Me encanta aprender y mejorar mis habilidades constantemente, y disfruto trabajando en proyectos desafiantes que me permiten crecer profesionalmente.",
+    "description": "Desarrollador full-stack con preferencia por el front-end. Ahora trabajo en Bitbox creando y manteniendo aplicaciones con Next.js y Spring Boot.",
     "cta": "Ver mis proyectos",
     "scroll": "Scroll"
   },
   "about": {
     "about": "Sobre",
     "me": "Mí",
-    "title": "Desarrollador apasionado con un enfoque en la calidad",
-    "p1": "Con experiencia en proyectos personales, como los que puede observar en mi portafolio. Me especializo en crear aplicaciones web modernas y eficientes. Además, me encanta aprender nuevas tecnologías y mejorar mis habilidades constantemente.",
-    "p2": "Siempre estoy buscando nuevas oportunidades para aprender y colaborar con otros.",
+    "title": "Desarrollador full-stack en Bitbox",
+    "p1": "Soy desarrollador full-stack en Bitbox. Creo y mantengo aplicaciones de postventa con Next.js y Spring Boot.",
+    "p2": "Estudié el ciclo superior de Desarrollo de Aplicaciones Multiplataforma (DAM) y no he parado desde entonces: ahora estoy cursando una especialización en Inteligencia Artificial y Big Data.",
     "cta": "Contáctame",
     "cv": "Descargar CV",
     "backend": {
@@ -53,16 +53,23 @@
     "title": "Mis",
     "titleHighlight": "Proyectos",
     "subtitle": "Aquí presento mis proyectos más recientes. Cada uno de ellos refleja mis habilidades y conocimientos sobre desarrollo web.",
-    "cta": "Visita mi github"
+    "cta": "Visita mi github",
+    "items": {
+      "1": { "description": "Aplicación web para gestionar el uso de los baños de los institutos y crear estadísticas." },
+      "2": { "description": "Videojuego interactivo con selección de personajes, donde cada uno tiene características únicas." }
+    }
   },
   "contact": {
     "title": "Contacto",
-    "subtitle": "Estaré encantado de recibir mensajes de cómo enfocar mi carrera, cosas a mejorar, ideas de proyectos...",
+    "subtitle": "Estoy abierto a hablar de proyectos, colaboraciones y oportunidades. Escríbeme.",
     "info": "Datos de contacto",
     "email": "Email",
     "location": "Ubicación",
     "locationValue": "Las Palmas de Gran Canaria, ES",
     "connect": "Conéctate conmigo"
   },
-  "inMainStack": "En stack principal"
+  "inMainStack": "En stack principal",
+  "footer": {
+    "rights": "Todos los derechos reservados."
+  }
 }

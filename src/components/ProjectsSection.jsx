@@ -54,7 +54,7 @@ export const ProjectsSection = () => {
 
               <div className="px-2">
                 <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
-                <p className="text-muted-foreground text-sm mb-4">{project.description}</p>
+                <p className="text-muted-foreground text-sm mb-4">{t(`projects.items.${project.id}.description`)}</p>
                 <div className="flex justify-between items-center">
                   <div className="flex space-x-3 mb-4 ml-4">
                     <a

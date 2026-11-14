@@ -26,4 +26,3 @@ function Home() {
   )
 }
 export default Home
-{/* 2:42:45 */}
