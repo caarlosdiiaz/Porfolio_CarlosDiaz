@@ -48,6 +48,12 @@
       "databases": "Databases",
       "tools": "Tools"
     }
+  },
+  "projects": {
+    "title": "My",
+    "titleHighlight": "Projects",
+    "subtitle": "Here I present my most recent projects. Each of them reflects my skills and knowledge about web development.",
+    "cta": "Visit my github"
   }
 }
 

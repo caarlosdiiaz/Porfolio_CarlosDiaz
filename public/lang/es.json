@@ -48,5 +48,11 @@
       "databases": "Bases de Datos",
       "tools": "Herramientas"
     }
+  },
+  "projects": {
+    "title": "Mis",
+    "titleHighlight": "Proyectos",
+    "subtitle": "Aquí presento mis proyectos más recientes. Cada uno de ellos refleja mis habilidades y conocimientos sobre desarrollo web.",
+    "cta": "Visita mi github"
   }
 }

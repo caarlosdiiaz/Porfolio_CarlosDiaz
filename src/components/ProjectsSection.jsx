@@ -1,4 +1,5 @@
-import { ArrowRight, ExternalLink, Github, Tags } from "lucide-react"
+import { ArrowRight, ExternalLink, Github } from "lucide-react"
+import { useTranslation } from "react-i18next"
 
 const projects = [
   {
@@ -21,15 +22,16 @@ const projects = [
 ]
 
 export const ProjectsSection = () => {
+  const { t } = useTranslation()
   return (
     <section id="projects" className="py-24 px-4 relative">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-          Mis <span className="text-primary">Proyectos</span>
+          {t("projects.title")} <span className="text-primary">{t("projects.titleHighlight")}</span>
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Aquí presento mis proyectos más recientes. Cada uno de ellos refleja mis habilidades y conocimientos sobre desarrollo web.
+          {t("projects.subtitle")}
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -85,7 +87,7 @@ export const ProjectsSection = () => {
             target="_blank"
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
           >
-            Visita mi github <ArrowRight />
+            {t("projects.cta")} <ArrowRight />
           </a>
         </div>
       </div>
