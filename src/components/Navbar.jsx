@@ -2,18 +2,20 @@ import { cn } from '@/lib/utils';
 import { Menu, X } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { ThemeToggle } from './ThemeToggle';
-
-const navItems = [
-  {name: 'Inicio', href: '#hero'},
-  {name: 'Acerca de mí', href: '#about'},
-  {name: 'Habilidades', href: '#skills'},
-  {name: 'Proyectos', href: '#projects'},
-  {name: 'Contacto', href: '#contact'},
-]
+import { useTranslation } from 'react-i18next';
 
 export const Navbar = () => {
+  const { t, i18n } = useTranslation()
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const navItems = [
+    { name: 'Inicio', href: '#hero' },
+    { name: 'Acerca de mí', href: '#about' },
+    { name: 'Habilidades', href: '#skills' },
+    { name: 'Proyectos', href: '#projects' },
+    { name: 'Contacto', href: '#contact' },
+  ]
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,17 +30,25 @@ export const Navbar = () => {
     <nav className={cn(
       "fixed w-full z-40 transition-all duration-300",
       isScrolled ? "py-3 bg-background/80 backdrop-blur-md shadow-xs" : "py-5"
-      )}
+    )}
     >
       <div className="container flex item-center justify-between">
-        <a
-          className='text-xl font-bold text-primary flex items-center'
-          href='#hero'
-        >
-          <span className='relative z-10'>
-            <span className='text-glow text-foreground'>Carlos Díaz</span> Portafolio
-          </span>
-        </a>
+        <div className="flex items-center gap-2">
+          <button
+            onClick={() => i18n.changeLanguage(i18n.language === 'es' ? 'en' : 'es')}
+            className='text-sm font-medium text-foreground/80 hover:text-primary transition-colors'
+          >
+            <img src={`/flags/${i18n.language.toLowerCase()}.svg`} alt={`${i18n.language} flag`} />
+          </button>
+          <a
+            className='text-xl font-bold text-primary flex items-center'
+            href='#hero'
+          >
+            <span className='relative z-10'>
+              <span className='text-glow text-foreground'>{t("Carlos Díaz")}</span> Portafolio
+            </span>
+          </a>
+        </div>
 
         {/* Navegación en pc */}
         <div className='hidden md:flex space-x-8'>

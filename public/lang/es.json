@@ -1,0 +1,10 @@
+{
+  "hero": {
+    "greeting": "Hola, soy",
+    "name": "Carlos",
+    "surname": "Díaz",
+    "description": "Soy un desarrollador full-stack que ha enfocado su carrera en siempre crear código limpio y en utilizar los principios SOLID. Me encanta aprender y mejorar mis habilidades constantemente, y disfruto trabajando en proyectos desafiantes que me permiten crecer profesionalmente.",
+    "cta": "Ver mis proyectos",
+    "scroll": "Scroll"
+  }
+}
