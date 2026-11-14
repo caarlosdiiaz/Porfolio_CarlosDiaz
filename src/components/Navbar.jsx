@@ -10,11 +10,11 @@ export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { name: 'Inicio', href: '#hero' },
-    { name: 'Acerca de mí', href: '#about' },
-    { name: 'Habilidades', href: '#skills' },
-    { name: 'Proyectos', href: '#projects' },
-    { name: 'Contacto', href: '#contact' },
+    { name: t('navbar.item.hero'), href: '#hero' },
+    { name: t('navbar.item.aboutMe'), href: '#about' },
+    { name: t('navbar.item.skills'), href: '#skills' },
+    { name: t('navbar.item.projects'), href: '#projects' },
+    { name: t('navbar.item.contact'), href: '#contact' },
   ]
 
   useEffect(() => {
@@ -45,7 +45,7 @@ export const Navbar = () => {
             href='#hero'
           >
             <span className='relative z-10'>
-              <span className='text-glow text-foreground'>{t("Carlos Díaz")}</span> Portafolio
+              <span className='text-glow text-foreground'>Carlos Díaz</span> {t("navbar.portfolio")}
             </span>
           </a>
         </div>

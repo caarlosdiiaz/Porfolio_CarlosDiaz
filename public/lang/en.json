@@ -1,4 +1,14 @@
 {
+  "navbar": {
+    "portfolio": "Portfolio",
+    "item": {
+      "hero": "Home",
+      "aboutMe": "About me",
+      "skills": "Skills",
+      "projects": "Projects",
+      "contact": "Contact"
+    }
+  },
   "hero": {
     "greeting": "Hi, I'm",
     "name": "Carlos",
@@ -8,3 +18,4 @@
     "scroll": "Scroll"
   }
 }
+
