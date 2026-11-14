@@ -2,6 +2,7 @@ import { useState } from "react"
 import { cn } from "@/lib/utils"
 
 const skills = [
+  {name: "Next", level: 90, category: "Frontend"},
   {name: "React", level: 90, category: "Frontend"},
   {name: "Angular", level: 30, category: "Frontend"},
   {name: "Kotlin", level: 50, category: "Frontend"},
@@ -56,7 +57,7 @@ export const SkillsSection = () => {
                 <h3 className="font-semibold text-lg">{skill.name}</h3>
               </div>
 
-              <div className="w-full bg-secondary/50 h-2 rounded-full overflow-hidden">
+              {/* <div className="w-full bg-secondary/50 h-2 rounded-full overflow-hidden">
                 <div
                   className="bg-primary h-2 rounded-full origin-left animate-[grow_1.5s_ease-out"
                   style={{ width: `${skill.level}%` }}
@@ -66,7 +67,7 @@ export const SkillsSection = () => {
                 <span className="text-sm text-muted-foreground">
                   {skill.level}%
                 </span>
-              </div>
+              </div> */}
             </div>
           ))}
         </div>
