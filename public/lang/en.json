@@ -16,6 +16,27 @@
     "description": "I'm a full-stack developer who has focused his career on always writing clean code and using SOLID principles. I love learning and constantly improving my skills, and I enjoy working on challenging projects that allow me to grow professionally.",
     "cta": "See my projects",
     "scroll": "Scroll"
+  },
+  "about": {
+    "about": "About",
+    "me": "Me",
+    "title": "Passionate developer focused on quality",
+    "p1": "With experience in personal projects, like the ones you can see in my portfolio. I specialize in creating modern and efficient web applications. I also love learning new technologies and constantly improving my skills.",
+    "p2": "I'm always looking for new opportunities to learn and collaborate with others.",
+    "cta": "Contact me",
+    "cv": "Download CV",
+    "backend": {
+      "title": "Backend Development",
+      "description": "Development of Restful APIs and scalable services testing different technologies, to find the most suitable ones for each project."
+    },
+    "web": {
+      "title": "Web Development",
+      "description": "Design and development of innovative and agile web applications, using the most suitable technological tools according to the context."
+    },
+    "philosophy": {
+      "title": "Programming Philosophy",
+      "description": "Using good practices such as SOLID principles, Clean Code, and reusable code are my fundamental pillars."
+    }
   }
 }
 
