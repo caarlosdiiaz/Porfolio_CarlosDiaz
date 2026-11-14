@@ -37,5 +37,16 @@
       "title": "Filosofía al programar",
       "description": "Emplear buenas prácticas como los principios SOLID, el Clean Code y el código reutilizable son mis pilares fundamentales."
     }
+  },
+  "skills": {
+    "title": "Mis",
+    "titleHighlight": "Habilidades",
+    "categories": {
+      "all": "Todas",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "databases": "Bases de Datos",
+      "tools": "Herramientas"
+    }
   }
 }

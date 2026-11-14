@@ -37,6 +37,17 @@
       "title": "Programming Philosophy",
       "description": "Using good practices such as SOLID principles, Clean Code, and reusable code are my fundamental pillars."
     }
+  },
+  "skills": {
+    "title": "My",
+    "titleHighlight": "Skills",
+    "categories": {
+      "all": "All",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "databases": "Databases",
+      "tools": "Tools"
+    }
   }
 }
 
