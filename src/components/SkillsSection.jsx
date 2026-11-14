@@ -3,19 +3,19 @@ import { cn } from "@/lib/utils"
 import { useTranslation } from "react-i18next"
 
 const skills = [
-  { name: "Next", level: 90, category: "frontend" },
-  { name: "React", level: 90, category: "frontend" },
-  { name: "Angular", level: 30, category: "frontend" },
-  { name: "Kotlin", level: 50, category: "frontend" },
-  { name: "Tailwind", level: 60, category: "frontend" },
-  { name: "Bootstrap", level: 80, category: "frontend" },
+  { name: "Next", level: 90, category: "frontend", favourite: true },
+  { name: "React", level: 90, category: "frontend", favourite: true },
+  { name: "Angular", level: 30, category: "frontend", favourite: false },
+  { name: "Kotlin", level: 50, category: "frontend", favourite: false },
+  { name: "Tailwind", level: 60, category: "frontend", favourite: true },
+  { name: "Bootstrap", level: 80, category: "frontend", favourite: false },
 
-  { name: "SpringBoot", level: 50, category: "backend" },
-  { name: "Nest.js", level: 50, category: "backend" },
-  { name: "Python", level: 70, category: "backend" },
+  { name: "SpringBoot", level: 50, category: "backend", favourite: true },
+  { name: "Nest.js", level: 50, category: "backend", favourite: false },
+  { name: "Python", level: 70, category: "backend", favourite: false },
 
-  { name: "SQL", level: 90, category: "databases" },
-  { name: "MongoDB", level: 70, category: "databases" },
+  { name: "SQL", level: 90, category: "databases", favourite: true },
+  { name: "MongoDB", level: 70, category: "databases", favourite: false },
 
   { name: "Git", level: 90, category: "tools" },
   { name: "Postman", level: 100, category: "tools" },
@@ -53,7 +53,10 @@ export const SkillsSection = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredSkills.map((skill, key) => (
-            <div key={key} className="bg-card p-6 rounded-lg shadow-xs card-hover">
+            <div key={key} className="bg-card p-6 rounded-lg shadow-xs card-hover relative">
+              {skill.favourite && (
+                <img title={t("inMainStack")} src="/skills/Star.svg" alt="" className="absolute top-2 right-2 w-4 h-4" />
+              )}
               <div className="flex items-center justify-between mb-4">
                 <img src={`/skills/${skill.name}.svg`} alt={skill.name} className="w-8 h-8" />
                 <h3 className="font-semibold text-lg">{skill.name}</h3>

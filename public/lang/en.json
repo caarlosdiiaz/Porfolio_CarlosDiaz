@@ -63,5 +63,6 @@
     "location": "Location",
     "locationValue": "Las Palmas de Gran Canaria, ES",
     "connect": "Connect with me"
-  }
+  },
+  "inMainStack": "In main stack"
 }
