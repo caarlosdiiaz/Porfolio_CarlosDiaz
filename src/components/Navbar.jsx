@@ -33,7 +33,7 @@ export const Navbar = () => {
     )}
     >
       <div className="container flex item-center justify-between">
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-6">
           <button
             onClick={() => i18n.changeLanguage(i18n.language === 'es' ? 'en' : 'es')}
             className='text-sm font-medium text-foreground/80 hover:text-primary transition-colors'
@@ -51,12 +51,13 @@ export const Navbar = () => {
         </div>
 
         {/* Navegación en pc */}
-        <div className='hidden md:flex space-x-8'>
+        <div className='hidden md:flex items-center space-x-8'>
           {navItems.map((item, key) => (
             <a key={key} href={item.href} className='text-foreground/800 hover:text-primary transition-colors duration-300'>
               {item.name}
             </a>
           ))}
+          <ThemeToggle isInline={true} className="text-foreground z-50" />
         </div>
 
         {/* Controles móviles: Theme Toggle + Menu Button */}
