@@ -54,6 +54,14 @@
     "titleHighlight": "Projects",
     "subtitle": "Here I present my most recent projects. Each of them reflects my skills and knowledge about web development.",
     "cta": "Visit my github"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "I'll be happy to receive messages about how to focus my career, things to improve, project ideas...",
+    "info": "Contact details",
+    "email": "Email",
+    "location": "Location",
+    "locationValue": "Las Palmas de Gran Canaria, ES",
+    "connect": "Connect with me"
   }
 }
-
