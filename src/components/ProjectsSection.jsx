@@ -16,7 +16,6 @@ const projects = [
     description: "Videojuego interactivo con selección de personajes, donde cada uno tiene características únicas.",
     image: "/projects/videogame.jpg",
     Tags: ["React", "CSS", "JavaScript"],
-    demoUrl: "https://videojuego-peleas-react.pages.dev/",
     githubUrl: "https://github.com/caarlosdiiaz/Proyecto_Final_Dam"
   }
 ]
@@ -45,7 +44,7 @@ export const ProjectsSection = () => {
                 />
               </div>
 
-              <div className="p-6">
+              <div className="py-6">
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.Tags.map((tag, index) => (
                     <span key={index} className="px-2 py-1 text-xs font-medium border rounded-full bg-primary/20 text-secondary-foreground">{tag}</span>
@@ -53,28 +52,30 @@ export const ProjectsSection = () => {
                 </div>
               </div>
 
-              <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
-              <p className="text-muted-foreground text-sm mb-4">{project.description}</p>
-              <div className="flex justify-between items-center">
-                <div className="flex space-x-3 mb-4 ml-4">
-                  <a
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                  >
-                    <Github size={20}/>
-                  </a>
-                  {project.demoUrl ? (
+              <div className="px-2">
+                <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
+                <p className="text-muted-foreground text-sm mb-4">{project.description}</p>
+                <div className="flex justify-between items-center">
+                  <div className="flex space-x-3 mb-4 ml-4">
                     <a
-                      href={project.demoUrl}
+                      href={project.githubUrl}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-foreground/80 hover:text-primary transition-colors duration-300"
                     >
-                      <ExternalLink size={20}/>
+                      <Github size={20} />
                     </a>
-                  ) : null}
+                    {project.demoUrl ? (
+                      <a
+                        href={project.demoUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                      >
+                        <ExternalLink size={20} />
+                      </a>
+                    ) : null}
+                  </div>
                 </div>
               </div>
             </div>

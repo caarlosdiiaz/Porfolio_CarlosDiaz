@@ -92,11 +92,11 @@
   }
 
   html {
-    @apply scroll-smooth;
+    @apply scroll-smooth transition-colors duration-700;
   }
 
   body {
-    @apply bg-background text-foreground transition-colors duration-300;
+    @apply bg-background text-foreground transition-colors duration-700;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 }
@@ -154,9 +154,7 @@
   box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3);
 }
 
-#root {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 0;
-  text-align: center;
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.6s;
 }

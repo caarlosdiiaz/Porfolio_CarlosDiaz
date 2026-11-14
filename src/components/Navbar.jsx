@@ -32,7 +32,7 @@ export const Navbar = () => {
       isScrolled ? "py-3 bg-background/80 backdrop-blur-md shadow-xs" : "py-5"
     )}
     >
-      <div className="container flex item-center justify-between">
+      <div className="container flex items-center justify-between">
         <div className="flex items-center gap-6">
           <button
             onClick={() => i18n.changeLanguage(i18n.language === 'es' ? 'en' : 'es')}
@@ -53,7 +53,7 @@ export const Navbar = () => {
         {/* Navegación en pc */}
         <div className='hidden md:flex items-center space-x-8'>
           {navItems.map((item, key) => (
-            <a key={key} href={item.href} className='text-foreground/800 hover:text-primary transition-colors duration-300'>
+            <a key={key} href={item.href} className='text-foreground/80 hover:text-primary transition-colors duration-300'>
               {item.name}
             </a>
           ))}

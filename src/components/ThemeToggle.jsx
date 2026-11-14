@@ -21,14 +21,21 @@ export const ThemeToggle = ({ isInline = false, className = "" }) => {
 
   // Cambiar el tema al hacer click en el botón
   const toggleTheme = () => {
-    if (isDarkMode) {
-      document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-      setIsDarkMode(false);
+    const apply = () => {
+      if (isDarkMode) {
+        document.documentElement.classList.remove("dark");
+        localStorage.setItem("theme", "light");
+        setIsDarkMode(false);
+      } else {
+        document.documentElement.classList.add("dark");
+        localStorage.setItem("theme", "dark");
+        setIsDarkMode(true);
+      }
+    };
+    if (document.startViewTransition) {
+      document.startViewTransition(apply);
     } else {
-      document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-      setIsDarkMode(true);
+      apply();
     }
   }
 
