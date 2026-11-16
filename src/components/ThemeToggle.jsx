@@ -1,10 +1,10 @@
 import { Moon, Sun } from 'lucide-react';
-import React, { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { cn } from '../lib/utils';
 
 export const ThemeToggle = ({ isInline = false, className = "" }) => {
   // Estado para manejar el tema actual
-  const [isDarkMode, setIsDarkMode] = React.useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   // Recoger del localstorage el tema guardado y aplicarlo
   useEffect(() => {
